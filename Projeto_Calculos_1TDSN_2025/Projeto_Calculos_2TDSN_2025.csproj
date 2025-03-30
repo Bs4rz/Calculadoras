@@ -52,6 +52,12 @@
     <Compile Include="fmrCalcRadio.Designer.cs">
       <DependentUpon>fmrCalcRadio.cs</DependentUpon>
     </Compile>
+    <Compile Include="fmrVisorUnico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmrVisorUnico.Designer.cs">
+      <DependentUpon>fmrVisorUnico.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCalcButtons.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="fmrCalcRadio.resx">
       <DependentUpon>fmrCalcRadio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmrVisorUnico.resx">
+      <DependentUpon>fmrVisorUnico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCalcButtons.resx">
       <DependentUpon>frmCalcButtons.cs</DependentUpon>

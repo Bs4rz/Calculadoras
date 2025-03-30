@@ -149,5 +149,6 @@ namespace Projeto_Calculos_1TDSN_2025
                 lBLResultadoR.Text = (Math.Pow(a, b)).ToString();
             }
         }
+
     }
 }

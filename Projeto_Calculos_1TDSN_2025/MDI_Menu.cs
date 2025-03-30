@@ -59,5 +59,12 @@ namespace Projeto_Calculos_1TDSN_2025
             objCalRad.MdiParent = this;
             objCalRad.Show();
         }
+
+        private void visualÚnicoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fmrVisorUnico objCalVisor = new fmrVisorUnico();
+            objCalVisor.MdiParent = this;
+            objCalVisor.Show();
+        }
     }
 }

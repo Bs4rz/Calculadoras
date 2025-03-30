@@ -119,6 +119,7 @@
             this.visualÚnicoToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F13;
             this.visualÚnicoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.visualÚnicoToolStripMenuItem.Text = "Visor Único";
+            this.visualÚnicoToolStripMenuItem.Click += new System.EventHandler(this.visualÚnicoToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -308,7 +309,7 @@
             this.Controls.Add(this.menuStrip2);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MDI_Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MDI_Menu";
