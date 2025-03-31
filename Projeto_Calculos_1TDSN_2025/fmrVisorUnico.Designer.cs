@@ -46,11 +46,12 @@
             this.btnSete = new System.Windows.Forms.Button();
             this.btnNove = new System.Windows.Forms.Button();
             this.btnOito = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblVisor = new System.Windows.Forms.Label();
             this.lblAntiga = new System.Windows.Forms.Label();
             this.btnClear = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnNsei
@@ -88,6 +89,7 @@
             this.btnZero.Text = "0";
             this.btnZero.UseVisualStyleBackColor = false;
             this.btnZero.Click += new System.EventHandler(this.F_numeros);
+            this.btnZero.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnDois_KeyDown);
             // 
             // btnMultiplicar
             // 
@@ -167,6 +169,7 @@
             this.btnTres.Text = "3";
             this.btnTres.UseVisualStyleBackColor = false;
             this.btnTres.Click += new System.EventHandler(this.F_numeros);
+            this.btnTres.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnDois_KeyDown);
             // 
             // btnUm
             // 
@@ -179,6 +182,7 @@
             this.btnUm.Text = "1";
             this.btnUm.UseVisualStyleBackColor = false;
             this.btnUm.Click += new System.EventHandler(this.F_numeros);
+            this.btnUm.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnDois_KeyDown);
             // 
             // btnDois
             // 
@@ -191,6 +195,7 @@
             this.btnDois.Text = "2";
             this.btnDois.UseVisualStyleBackColor = false;
             this.btnDois.Click += new System.EventHandler(this.F_numeros);
+            this.btnDois.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnDois_KeyDown);
             // 
             // btnQuatro
             // 
@@ -203,6 +208,7 @@
             this.btnQuatro.Text = "4";
             this.btnQuatro.UseVisualStyleBackColor = false;
             this.btnQuatro.Click += new System.EventHandler(this.F_numeros);
+            this.btnQuatro.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnDois_KeyDown);
             // 
             // btnSeis
             // 
@@ -215,6 +221,7 @@
             this.btnSeis.Text = "6";
             this.btnSeis.UseVisualStyleBackColor = false;
             this.btnSeis.Click += new System.EventHandler(this.F_numeros);
+            this.btnSeis.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnDois_KeyDown);
             // 
             // btnCinco
             // 
@@ -227,6 +234,7 @@
             this.btnCinco.Text = "5";
             this.btnCinco.UseVisualStyleBackColor = false;
             this.btnCinco.Click += new System.EventHandler(this.F_numeros);
+            this.btnCinco.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnDois_KeyDown);
             // 
             // btnSete
             // 
@@ -239,6 +247,7 @@
             this.btnSete.Text = "7";
             this.btnSete.UseVisualStyleBackColor = false;
             this.btnSete.Click += new System.EventHandler(this.F_numeros);
+            this.btnSete.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnDois_KeyDown);
             // 
             // btnNove
             // 
@@ -251,6 +260,7 @@
             this.btnNove.Text = "9";
             this.btnNove.UseVisualStyleBackColor = false;
             this.btnNove.Click += new System.EventHandler(this.F_numeros);
+            this.btnNove.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnDois_KeyDown);
             // 
             // btnOito
             // 
@@ -263,15 +273,16 @@
             this.btnOito.Text = "8";
             this.btnOito.UseVisualStyleBackColor = false;
             this.btnOito.Click += new System.EventHandler(this.F_numeros);
+            this.btnOito.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnDois_KeyDown);
             // 
-            // label1
+            // label4
             // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Location = new System.Drawing.Point(3, 100);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(260, 341);
-            this.label1.TabIndex = 27;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label4.Location = new System.Drawing.Point(3, 100);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(260, 341);
+            this.label4.TabIndex = 27;
             // 
             // label2
             // 
@@ -314,11 +325,20 @@
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 94);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.TabIndex = 34;
+            // 
             // fmrVisorUnico
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(379, 446);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.lblAntiga);
             this.Controls.Add(this.lblVisor);
@@ -340,13 +360,16 @@
             this.Controls.Add(this.btnZero);
             this.Controls.Add(this.btnVirgula);
             this.Controls.Add(this.btnNsei);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
+            this.KeyPreview = true;
             this.Name = "fmrVisorUnico";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "fmrVisorUnico";
             this.Click += new System.EventHandler(this.Operacoes);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnDois_KeyDown);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -370,10 +393,11 @@
         private System.Windows.Forms.Button btnSete;
         private System.Windows.Forms.Button btnNove;
         private System.Windows.Forms.Button btnOito;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblVisor;
         private System.Windows.Forms.Label lblAntiga;
         private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Label label1;
     }
 }

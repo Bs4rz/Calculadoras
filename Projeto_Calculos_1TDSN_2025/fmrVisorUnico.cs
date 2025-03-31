@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Projeto_Calculos_1TDSN_2025
 {
-    public partial class fmrVisorUnico: Form
+    public partial class fmrVisorUnico : Form
     {
         string operacao = "";
         decimal vNumAnt;
@@ -72,7 +72,7 @@ namespace Projeto_Calculos_1TDSN_2025
                 case "^":
                     lblVisor.Text = Math.Pow(double.Parse(vNumAnt.ToString()), double.Parse(vNumAtual.ToString())).ToString();
                     break;
-            } 
+            }
             lblVisor.Focus();
         }
 
@@ -83,6 +83,22 @@ namespace Projeto_Calculos_1TDSN_2025
             operacao = "";
         }
 
-
+        private void btnDois_KeyDown(object sender, KeyEventArgs e)
+        {
+            label1.Text = e.KeyCode.ToString();
+            string digito = e.KeyCode.ToString();
+            Button bot = new Button();
+            if (e.KeyCode >= Keys.D0 && e.KeyCode <= Keys.D9)
+            {
+                bot.Text = digito.Substring(1, 1);
+                F_numeros(bot, e);
+            }
+            else if (e.KeyCode >= Keys.NumPad0 && e.KeyCode <= Keys.NumPad9)
+            {
+                bot.Text = digito.Substring(6, 1);
+                F_numeros(bot, e);
+            }
+        }
+          
     }
 }
