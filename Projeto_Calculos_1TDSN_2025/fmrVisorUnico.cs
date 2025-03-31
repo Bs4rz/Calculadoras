@@ -37,6 +37,7 @@ namespace Projeto_Calculos_1TDSN_2025
             {
                 lblVisor.Text += Digito;
             }
+
         }
 
         private void Operacoes(object sender, EventArgs e)
@@ -46,6 +47,8 @@ namespace Projeto_Calculos_1TDSN_2025
             vLimpar = true;
             lblAntiga.Text = vNumAnt.ToString();
             lblAntiga.Text += operacao;
+
+            lblVisor.Focus();
         }
 
         private void btnIgual_Click(object sender, EventArgs e)
@@ -70,6 +73,14 @@ namespace Projeto_Calculos_1TDSN_2025
                     lblVisor.Text = Math.Pow(double.Parse(vNumAnt.ToString()), double.Parse(vNumAtual.ToString())).ToString();
                     break;
             } 
+            lblVisor.Focus();
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            lblVisor.Text = "0";
+            lblAntiga.Text = "";
+            operacao = "";
         }
 
 
