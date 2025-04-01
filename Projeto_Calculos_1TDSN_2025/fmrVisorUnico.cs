@@ -15,6 +15,7 @@ namespace Projeto_Calculos_1TDSN_2025
         string operacao = "";
         decimal vNumAnt;
         bool vLimpar = false;
+        
         public fmrVisorUnico()
         {
             InitializeComponent();
@@ -38,7 +39,19 @@ namespace Projeto_Calculos_1TDSN_2025
                 lblVisor.Text += Digito;
             }
 
+            if (lblVisor.Text.Length > 17)
+            {
+                lblVisor.Text = lblVisor.Text;
+                lblAntiga.Visible = false;
+            }
+            else
+            {
+                lblAntiga.Visible = true;
+            }
+                lblVisor.Focus();
+
         }
+
 
         private void Operacoes(object sender, EventArgs e)
         {
@@ -67,7 +80,14 @@ namespace Projeto_Calculos_1TDSN_2025
                     lblVisor.Text = (vNumAnt * vNumAtual).ToString();
                     break;
                 case "/":
-                    lblVisor.Text = (vNumAnt / vNumAtual).ToString();
+                    if (vNumAtual == 0 || vNumAnt == 0)
+                    {
+                        lblVisor.Text = "1";
+                    }
+                    else
+                    {
+                        lblVisor.Text = (vNumAnt / vNumAtual).ToString();
+                    }
                     break;
                 case "^":
                     lblVisor.Text = Math.Pow(double.Parse(vNumAnt.ToString()), double.Parse(vNumAtual.ToString())).ToString();
@@ -83,6 +103,45 @@ namespace Projeto_Calculos_1TDSN_2025
             operacao = "";
         }
 
+        private void btnVirgula_Click(object sender, EventArgs e)
+        {
+            if (!lblVisor.Text.Contains(","))
+            {
+                lblVisor.Text += ",";
+            }
+        }
 
+        private void btnErase_Click(object sender, EventArgs e)
+        {
+            // Verifica se há algo para apagar e se não está apenas com "0"
+            if (lblVisor.Text.Length > 0 && lblVisor.Text != "0")
+            {
+                // Remove o último caractere
+                lblVisor.Text = lblVisor.Text.Substring(0, lblVisor.Text.Length - 1);
+
+                // Se após apagar ficar vazio ou se o que sobrou for apenas "-" (no caso de números negativos), coloca "0"
+                if (lblVisor.Text.Length == 0 || lblVisor.Text == "-")
+                {
+                    lblVisor.Text = "0";
+                }
+            }
+            lblVisor.Focus();
+        }
+
+        private void btnNegativo_Click(object sender, EventArgs e)
+        {
+            if (lblVisor.Text != "0")
+            {
+                if (lblVisor.Text.StartsWith("-"))
+                {
+                    lblVisor.Text = lblVisor.Text.Substring(1);
+                }
+                else
+                {
+                    lblVisor.Text = "-" + lblVisor.Text;
+                }
+            }
+            lblVisor.Focus();
+        }
     }
 }
