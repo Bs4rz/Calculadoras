@@ -66,5 +66,21 @@ namespace Projeto_Calculos_1TDSN_2025
             objCalVisor.MdiParent = this;
             objCalVisor.Show();
         }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            fmrVisorUnico objCalBot = new fmrVisorUnico();
+            //Assim Abre dentro da janela
+            objCalBot.MdiParent = this;
+            objCalBot.Show();
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            fmrCalcRadio objCalBot = new fmrCalcRadio();
+            //Assim Abre dentro da janela
+            objCalBot.MdiParent = this;
+            objCalBot.Show();
+        }
     }
 }

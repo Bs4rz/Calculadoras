@@ -58,8 +58,8 @@ namespace Projeto_Calculos_1TDSN_2025
             operacao = ((Button)sender).Text;
             vNumAnt = decimal.Parse(lblVisor.Text);
             vLimpar = true;
-            lblAntiga.Text = vNumAnt.ToString();
-            lblAntiga.Text += operacao;
+            lblAntiga.Text = " " + vNumAnt.ToString();
+            lblAntiga.Text += " " + operacao;
 
             lblVisor.Focus();
         }
@@ -67,7 +67,7 @@ namespace Projeto_Calculos_1TDSN_2025
         private void btnIgual_Click(object sender, EventArgs e)
         {
             decimal vNumAtual = decimal.Parse(lblVisor.Text);
-            lblAntiga.Text += vNumAtual.ToString();
+            lblAntiga.Text += " " + vNumAtual.ToString();
             switch (operacao)
             {
                 case "+":
@@ -142,6 +142,59 @@ namespace Projeto_Calculos_1TDSN_2025
                 }
             }
             lblVisor.Focus();
+        }
+
+        // Adiciona o teclado
+        private void fmrVisorUnico_KeyDown(object sender, KeyEventArgs e)
+        {
+            lblTeclado.Text = e.KeyCode.ToString();
+            string digito = e.KeyCode.ToString();
+            Button bot = new Button();
+
+            if (e.KeyCode >= Keys.D0 && e.KeyCode <= Keys.D9)
+            {
+                bot.Text = digito.Substring(1, 1);
+                F_numeros(bot, e);
+            }
+            else if (e.KeyCode >= Keys.NumPad0 && e.KeyCode <= Keys.NumPad9)
+            {
+                bot.Text = digito.Substring(6, 1);
+                F_numeros(bot, e);
+            }
+                switch (e.KeyCode.ToString())
+                {
+                    case "Add":
+                        bot.Text = "+";
+                        Operacoes(bot, e);
+                        break;
+                    case "Subtract":
+                        bot.Text = "-";
+                        Operacoes(bot, e);
+                        break;
+                    case "OemMinus":
+                        bot.Text = "-";
+                        Operacoes(bot, e);
+                        break;
+                    case "Multiply":
+                        bot.Text = "*";
+                        Operacoes(bot, e);
+                        break;
+                    case "None":
+                        bot.Text = "/";
+                        Operacoes(bot, e);
+                        break;
+                    case "Divide":
+                        bot.Text = "/";
+                        Operacoes(bot, e);
+                        break;
+                    case "Oemcomma":
+                        bot.Text = ",";
+                        btnVirgula_Click(bot, e);
+                        break;
+                    case "Back":
+                        btnErase_Click(bot, e);
+                        break;
+                }
         }
     }
 }
