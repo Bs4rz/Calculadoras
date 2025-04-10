@@ -106,5 +106,23 @@ namespace Projeto_Calculos_1TDSN_2025
                 
             }
         }
+
+        private void btnPotencia_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                lblSinal.Text = " ^ ";
+                double a, b;
+
+                a = double.Parse(txtN1.Text);
+                b = double.Parse(txtN2.Text);
+                lblResultado.Text = (Math.Pow(a, b)).ToString();
+
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("[ERRO!!!] Digite apenas números!");
+            }
+        }
     }
 }

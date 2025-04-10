@@ -78,11 +78,19 @@ namespace Projeto_Calculos_1TDSN_2025
                     break;
                 case "x":
                     lblVisor.Text = (vNumAnt * vNumAtual).ToString();
+                    if (vNumAtual == 0 || vNumAnt == 0)
+                    {
+                        lblVisor.Text = "1";
+                    }
+                    else
+                    {
+                        lblVisor.Text = (vNumAnt * vNumAtual).ToString();
+                    }
                     break;
                 case "/":
                     if (vNumAtual == 0 || vNumAnt == 0)
                     {
-                        lblVisor.Text = "1";
+                        lblVisor.Text = (vNumAnt + vNumAtual).ToString();
                     }
                     else
                     {
@@ -113,13 +121,12 @@ namespace Projeto_Calculos_1TDSN_2025
 
         private void btnErase_Click(object sender, EventArgs e)
         {
-            // Verifica se há algo para apagar e se não está apenas com "0"
+            
             if (lblVisor.Text.Length > 0 && lblVisor.Text != "0")
             {
-                // Remove o último caractere
+                
                 lblVisor.Text = lblVisor.Text.Substring(0, lblVisor.Text.Length - 1);
 
-                // Se após apagar ficar vazio ou se o que sobrou for apenas "-" (no caso de números negativos), coloca "0"
                 if (lblVisor.Text.Length == 0 || lblVisor.Text == "-")
                 {
                     lblVisor.Text = "0";
@@ -195,10 +202,14 @@ namespace Projeto_Calculos_1TDSN_2025
                         btnErase_Click(bot, e);
                         break;
                     case "Decimal":
-                         bot.Text = ",";
-                        btnVirgula_Click(bot, e);
+                         bot.Text = "+";
+                        Operacoes(bot, e);
                         break;
-                }
+                    case "Oemplus":
+                        bot.Text = "+";
+                        Operacoes(bot, e);
+                        break;
+            }
         }
     }
 }

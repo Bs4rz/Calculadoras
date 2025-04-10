@@ -46,9 +46,10 @@
             // 
             // bTNLimparR
             // 
-            this.bTNLimparR.Location = new System.Drawing.Point(12, 301);
+            this.bTNLimparR.Location = new System.Drawing.Point(18, 463);
+            this.bTNLimparR.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bTNLimparR.Name = "bTNLimparR";
-            this.bTNLimparR.Size = new System.Drawing.Size(89, 31);
+            this.bTNLimparR.Size = new System.Drawing.Size(134, 48);
             this.bTNLimparR.TabIndex = 0;
             this.bTNLimparR.Text = "Limpar";
             this.bTNLimparR.UseVisualStyleBackColor = true;
@@ -56,9 +57,10 @@
             // 
             // bTNFecharR
             // 
-            this.bTNFecharR.Location = new System.Drawing.Point(386, 301);
+            this.bTNFecharR.Location = new System.Drawing.Point(579, 463);
+            this.bTNFecharR.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bTNFecharR.Name = "bTNFecharR";
-            this.bTNFecharR.Size = new System.Drawing.Size(89, 31);
+            this.bTNFecharR.Size = new System.Drawing.Size(134, 48);
             this.bTNFecharR.TabIndex = 1;
             this.bTNFecharR.Text = "Fechar";
             this.bTNFecharR.UseVisualStyleBackColor = true;
@@ -68,9 +70,10 @@
             this.lBLResultadoR.AllowDrop = true;
             this.lBLResultadoR.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lBLResultadoR.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lBLResultadoR.Location = new System.Drawing.Point(340, 228);
+            this.lBLResultadoR.Location = new System.Drawing.Point(510, 351);
+            this.lBLResultadoR.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lBLResultadoR.Name = "lBLResultadoR";
-            this.lBLResultadoR.Size = new System.Drawing.Size(111, 31);
+            this.lBLResultadoR.Size = new System.Drawing.Size(166, 48);
             this.lBLResultadoR.TabIndex = 3;
             this.lBLResultadoR.Text = "?";
             this.lBLResultadoR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -78,26 +81,29 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(298, 193);
+            this.label2.Location = new System.Drawing.Point(447, 297);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(307, 13);
+            this.label2.Size = new System.Drawing.Size(459, 20);
             this.label2.TabIndex = 4;
             this.label2.Text = "__________________________________________________";
             // 
             // tXTN1R
             // 
-            this.tXTN1R.Location = new System.Drawing.Point(319, 49);
+            this.tXTN1R.Location = new System.Drawing.Point(478, 75);
+            this.tXTN1R.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tXTN1R.Name = "tXTN1R";
-            this.tXTN1R.Size = new System.Drawing.Size(156, 20);
+            this.tXTN1R.Size = new System.Drawing.Size(232, 26);
             this.tXTN1R.TabIndex = 5;
             this.tXTN1R.Text = "0";
             this.tXTN1R.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tXTN2R
             // 
-            this.tXTN2R.Location = new System.Drawing.Point(319, 132);
+            this.tXTN2R.Location = new System.Drawing.Point(478, 203);
+            this.tXTN2R.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tXTN2R.Name = "tXTN2R";
-            this.tXTN2R.Size = new System.Drawing.Size(156, 20);
+            this.tXTN2R.Size = new System.Drawing.Size(232, 26);
             this.tXTN2R.TabIndex = 6;
             this.tXTN2R.Text = "0";
             this.tXTN2R.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -106,9 +112,10 @@
             // 
             this.lBLSinalR.AllowDrop = true;
             this.lBLSinalR.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lBLSinalR.Location = new System.Drawing.Point(373, 85);
+            this.lBLSinalR.Location = new System.Drawing.Point(560, 131);
+            this.lBLSinalR.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lBLSinalR.Name = "lBLSinalR";
-            this.lBLSinalR.Size = new System.Drawing.Size(53, 31);
+            this.lBLSinalR.Size = new System.Drawing.Size(80, 48);
             this.lBLSinalR.TabIndex = 7;
             this.lBLSinalR.Text = "?";
             this.lBLSinalR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -119,9 +126,10 @@
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label4.Cursor = System.Windows.Forms.Cursors.Default;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(12, 27);
+            this.label4.Location = new System.Drawing.Point(18, 42);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(149, 214);
+            this.label4.Size = new System.Drawing.Size(224, 329);
             this.label4.TabIndex = 8;
             this.label4.Text = "Operações";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -130,9 +138,10 @@
             // 
             this.cBsomar.AutoSize = true;
             this.cBsomar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cBsomar.Location = new System.Drawing.Point(21, 52);
+            this.cBsomar.Location = new System.Drawing.Point(32, 80);
+            this.cBsomar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cBsomar.Name = "cBsomar";
-            this.cBsomar.Size = new System.Drawing.Size(53, 17);
+            this.cBsomar.Size = new System.Drawing.Size(77, 24);
             this.cBsomar.TabIndex = 9;
             this.cBsomar.Text = "Somar";
             this.cBsomar.UseVisualStyleBackColor = true;
@@ -142,9 +151,10 @@
             // 
             this.cBSub.AutoSize = true;
             this.cBSub.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cBSub.Location = new System.Drawing.Point(21, 85);
+            this.cBSub.Location = new System.Drawing.Point(32, 131);
+            this.cBSub.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cBSub.Name = "cBSub";
-            this.cBSub.Size = new System.Drawing.Size(59, 17);
+            this.cBSub.Size = new System.Drawing.Size(86, 24);
             this.cBSub.TabIndex = 10;
             this.cBSub.Text = "Subtrair";
             this.cBSub.UseVisualStyleBackColor = true;
@@ -154,9 +164,10 @@
             // 
             this.cBMulti.AutoSize = true;
             this.cBMulti.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cBMulti.Location = new System.Drawing.Point(21, 119);
+            this.cBMulti.Location = new System.Drawing.Point(32, 183);
+            this.cBMulti.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cBMulti.Name = "cBMulti";
-            this.cBMulti.Size = new System.Drawing.Size(70, 17);
+            this.cBMulti.Size = new System.Drawing.Size(100, 24);
             this.cBMulti.TabIndex = 11;
             this.cBMulti.Text = "Multiplicar";
             this.cBMulti.UseVisualStyleBackColor = true;
@@ -166,9 +177,10 @@
             // 
             this.cBDividir.AutoSize = true;
             this.cBDividir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cBDividir.Location = new System.Drawing.Point(21, 157);
+            this.cBDividir.Location = new System.Drawing.Point(32, 242);
+            this.cBDividir.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cBDividir.Name = "cBDividir";
-            this.cBDividir.Size = new System.Drawing.Size(52, 17);
+            this.cBDividir.Size = new System.Drawing.Size(72, 24);
             this.cBDividir.TabIndex = 12;
             this.cBDividir.Text = "Dividir";
             this.cBDividir.UseVisualStyleBackColor = true;
@@ -178,9 +190,10 @@
             // 
             this.cBPoten.AutoSize = true;
             this.cBPoten.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cBPoten.Location = new System.Drawing.Point(21, 193);
+            this.cBPoten.Location = new System.Drawing.Point(32, 297);
+            this.cBPoten.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cBPoten.Name = "cBPoten";
-            this.cBPoten.Size = new System.Drawing.Size(98, 17);
+            this.cBPoten.Size = new System.Drawing.Size(141, 24);
             this.cBPoten.TabIndex = 13;
             this.cBPoten.Text = "Potencialização";
             this.cBPoten.UseVisualStyleBackColor = true;
@@ -188,9 +201,10 @@
             // 
             // btnCalcular
             // 
-            this.btnCalcular.Location = new System.Drawing.Point(198, 301);
+            this.btnCalcular.Location = new System.Drawing.Point(297, 463);
+            this.btnCalcular.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(89, 31);
+            this.btnCalcular.Size = new System.Drawing.Size(134, 48);
             this.btnCalcular.TabIndex = 14;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
@@ -198,11 +212,11 @@
             // 
             // fmrCalcRadio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(479, 335);
+            this.ClientSize = new System.Drawing.Size(718, 515);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.cBPoten);
             this.Controls.Add(this.cBDividir);
@@ -217,6 +231,7 @@
             this.Controls.Add(this.lBLResultadoR);
             this.Controls.Add(this.bTNFecharR);
             this.Controls.Add(this.bTNLimparR);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "fmrCalcRadio";
             this.Text = "fmrCaldRadio";
             this.ResumeLayout(false);

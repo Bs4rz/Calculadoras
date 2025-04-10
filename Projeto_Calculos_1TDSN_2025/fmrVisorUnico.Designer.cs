@@ -352,7 +352,7 @@
             this.lblTeclado.AutoSize = true;
             this.lblTeclado.Location = new System.Drawing.Point(12, 91);
             this.lblTeclado.Name = "lblTeclado";
-            this.lblTeclado.Size = new System.Drawing.Size(0, 13);
+            this.lblTeclado.Size = new System.Drawing.Size(0, 20);
             this.lblTeclado.TabIndex = 35;
             // 
             // fmrVisorUnico
@@ -385,6 +385,7 @@
             this.Controls.Add(this.btnNegativo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.KeyPreview = true;
             this.Name = "fmrVisorUnico";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;

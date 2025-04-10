@@ -40,6 +40,7 @@
             this.btnSubtrair = new System.Windows.Forms.Button();
             this.btnDiv = new System.Windows.Forms.Button();
             this.btnMulti = new System.Windows.Forms.Button();
+            this.btnPotencia = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtN1
@@ -129,7 +130,7 @@
             // 
             // btnSubtrair
             // 
-            this.btnSubtrair.Location = new System.Drawing.Point(420, 102);
+            this.btnSubtrair.Location = new System.Drawing.Point(420, 137);
             this.btnSubtrair.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnSubtrair.Name = "btnSubtrair";
             this.btnSubtrair.Size = new System.Drawing.Size(116, 39);
@@ -140,7 +141,7 @@
             // 
             // btnDiv
             // 
-            this.btnDiv.Location = new System.Drawing.Point(282, 102);
+            this.btnDiv.Location = new System.Drawing.Point(282, 137);
             this.btnDiv.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnDiv.Name = "btnDiv";
             this.btnDiv.Size = new System.Drawing.Size(116, 39);
@@ -160,12 +161,24 @@
             this.btnMulti.UseVisualStyleBackColor = true;
             this.btnMulti.Click += new System.EventHandler(this.btnMulti_Click);
             // 
+            // btnPotencia
+            // 
+            this.btnPotencia.Location = new System.Drawing.Point(353, 85);
+            this.btnPotencia.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnPotencia.Name = "btnPotencia";
+            this.btnPotencia.Size = new System.Drawing.Size(116, 39);
+            this.btnPotencia.TabIndex = 12;
+            this.btnPotencia.Text = "Potência";
+            this.btnPotencia.UseVisualStyleBackColor = true;
+            this.btnPotencia.Click += new System.EventHandler(this.btnPotencia_Click);
+            // 
             // frmCalcButtons
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(544, 332);
+            this.Controls.Add(this.btnPotencia);
             this.Controls.Add(this.btnDiv);
             this.Controls.Add(this.btnMulti);
             this.Controls.Add(this.btnSubtrair);
@@ -200,6 +213,7 @@
         private System.Windows.Forms.Button btnSubtrair;
         private System.Windows.Forms.Button btnDiv;
         private System.Windows.Forms.Button btnMulti;
+        private System.Windows.Forms.Button btnPotencia;
     }
 }
 
